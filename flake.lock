@@ -1,0 +1,62 @@
+{
+  "nodes": {
+    "fetchSWH": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1622395100,
+        "narHash": "sha256-g3Ze+xxEo0YkovlNsXuJppz3k9xhuU1Zk16nMmt+Sq0=",
+        "owner": "sisyphe-re",
+        "repo": "fetchSWH",
+        "rev": "bd6a757204f36bcf3e24849a3afc083e52d7d1a1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sisyphe-re",
+        "repo": "fetchSWH",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1622341515,
+        "narHash": "sha256-lOZHRz/Rj7w41SyjEVetaoS8umzd7SRfEA+hj273iWA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "8f014925190a6dcc532230e6354f7d9232a7c598",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-20.09",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1622341515,
+        "narHash": "sha256-lOZHRz/Rj7w41SyjEVetaoS8umzd7SRfEA+hj273iWA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "8f014925190a6dcc532230e6354f7d9232a7c598",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-20.09",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "fetchSWH": "fetchSWH",
+        "nixpkgs": "nixpkgs_2"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
