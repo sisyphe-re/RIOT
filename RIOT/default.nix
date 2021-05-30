@@ -37,6 +37,9 @@ stdenv.mkDerivation rec {
     find ./ -wholename "*.git/logs/HEAD" -delete
     find ./ -wholename "*.git/logs/refs/remotes/origin/HEAD" -delete
     find ./ -wholename "*.git/logs/refs/heads/master" -delete
+    find ./ -wholename "*.git/packed-refs" -delete
+    find ./ -wholename "*.git/refs/heads/master" -delete
+    find ./ -name ".pkg-state.git-patched.d" -delete
   '';
 
   installPhase = ''
@@ -67,5 +70,5 @@ stdenv.mkDerivation rec {
 
   outputHashAlgo = "sha256";
   outputHashMode = "recursive";
-  outputHash = "sha256-i71QqqcLlsA/MxorHoc78dCrIDQVtWDV2TqB4fZmzIc=";
+  outputHash = "17ik4bjnar7lzv7c189nnldy426yc6mmwmbzxcj54s5pdas12c6y";
 }
